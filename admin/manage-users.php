@@ -87,7 +87,7 @@ header('location:manage-users.php');
 											<td><a href="javascript:void(0);" onClick="popUpWindow('userprofile.php?uid=<?php echo htmlentities($row['id']);?>');" title="View Details">
 											<button type="button" class="btn btn-primary">View Detials</button>
 											</a>
-											<!-- <a href="manage-users.php?uid=<?php echo htmlentities($row['id']);?>&&action=del" title="Delete" onClick="return confirm('Do you really want to delete ?')"> -->
+											<a href="javascript:void(0);" onClick="popUpWindow('edit-profile.php?uid=<?php echo htmlentities($row['id']);?>');" title="Edit Details">
 											<button type="button" class="btn btn-success">Edit</button></a>
 											<a href="manage-users.php?uid=<?php echo htmlentities($row['id']);?>&&action=del" title="Delete" onClick="return confirm('Do you really want to delete ?')">
 											<button type="button" class="btn btn-danger">Delete</button></a>

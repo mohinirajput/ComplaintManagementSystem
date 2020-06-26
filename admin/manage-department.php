@@ -79,10 +79,13 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 											<td><?php echo htmlentities($row['DepId']);?></td>
 											<td><?php echo htmlentities($row['DepName']);?></td>
                                                 <td>
-                                                    <!-- <a href="manage-admins.php?uid=<?php echo htmlentities($row['id']);?>&&action=del" title="Delete" onClick="return confirm('Do you really want to delete ?')"> -->
-                                                    <button type="button" class="btn btn-success">Edit</button></a>
-                                                    <a href="manage-admins.php?uid=<?php echo htmlentities($row['id']);?>&&action=del" title="Delete" onClick="return confirm('Do you really want to delete ?')">
-                                                    <button type="button" class="btn btn-danger">Delete</button></a>
+                                                    <!-- <a href="manage-admins.php?uid=<?php echo htmlentities($row['id']);?>&&action=del" title="Delete" onClick="return confirm('Do you really want to delete ?')">
+                                                    <button type="button" class="btn btn-success">Edit</button></a>-->
+                                                    <!-- <a href="manage-admins.php?uid=<?php echo htmlentities($row['id']);?>&&action=del" title="Delete" onClick="return confirm('Do you really want to delete ?')">
+                                                    <button type="button" class="btn btn-danger">Delete</button></a> -->
+													<a href="manage-admins.php?uid=<?php echo htmlentities($row['id']);?>&&action=del" title="Delete" onClick="return confirm('Do you really want to delete ?')">
+													<button type="button" class="btn btn-danger">Delete</button>
+												</a>
                                                 </td>
 										<?php $cnt=$cnt+1; } ?>
 								</table>
